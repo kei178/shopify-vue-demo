@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 
+// axios
+import axios from "axios"
+
 // vue-router
 import VueRouter from 'vue-router'
 import { routes } from './routes'
 Vue.use(VueRouter)
-
-// axios
-import axios from "axios"
 
 const router = new VueRouter({
   mode: 'history',
@@ -20,6 +20,12 @@ const router = new VueRouter({
     })
   }
 })
+
+// Shopify Polaris
+import PolarisVue from '@eastsideco/polaris-vue'
+import '@eastsideco/polaris-vue/lib/polaris-vue.css'
+
+Vue.use(PolarisVue)
 
 new Vue({
   el: '#app',

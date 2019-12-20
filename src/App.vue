@@ -1,10 +1,8 @@
 <template>
-  <div class="ui text container">
-    <!-- <app-header></app-header> -->
+  <div>
     <transition name="fade" mode="out-in">
       <router-view></router-view>
     </transition>
-    <!-- <app-footer></app-footer> -->
   </div>
 </template>
 
