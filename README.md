@@ -2,17 +2,31 @@
 
 > A Vue.js demo for Shopify Admin app
 
-## Build Setup
+## Requirements
+* Vue.js
+* [ngrok](https://ngrok.com/download)
+* Shopify Partners account
 
-``` bash
-# install dependencies
-npm install
+## Run
 
-# serve with hot reload at localhost:8080
-npm run dev
+Start ngrok with port 8080.
 
-# build for production with minification
-npm run build
+```
+./ngrok http 8080
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Copry the ngrok URL and add it in env.rb & the Shopify App settings, something link below:
+
+```
+https://78ce07c3.ngrok.io
+```
+
+Run the Vue.js app.
+
+```
+npm run serve
+```
+
+## Reference
+* [Build a Shopify app with Node and Express](https://help.shopify.com/en/api/tutorials/build-a-shopify-app-with-node-and-express)
+* [Build a Shopify app with Ruby and Sinatra - Shopify Developers](https://help.shopify.com/en/api/tutorials/build-a-shopify-app-with-ruby-and-sinatra)
