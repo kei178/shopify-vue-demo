@@ -1,6 +1,6 @@
 # shopify-vue-demo
 
-> A Vue.js demo for Shopify Admin app
+A Vue.js demo for Shopify Admin app
 
 ## Requirements
 * Vue.js
